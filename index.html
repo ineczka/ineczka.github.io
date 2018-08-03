@@ -1,3 +1,446 @@
-﻿Am I in a right folder?
-This is a second line added in editor
-A tiny change on a branch
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Portfolio</title>
+  
+  
+  
+  
+  
+</head>
+
+<body>
+
+  <html >
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Playball|Mr+Dafoe|Lato|Roboto:100|Dancing+Script|Cinzel|Playfair+Display+SC|Noto+Serif|Droid+Serif|PT+Serif+Caption">
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script  src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	
+</head>
+<style>
+/*Navbar Starts*/
+
+#navBar{
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+}
+#navBar:hover{   
+  background-color:white;
+  color:black;
+  box-shadow: 1px 1px 0px rgba(0, 0, 0, .5);
+}
+ 
+.navbar-brand{
+  font-size:35px;
+  font-family:'PT Serif Caption', serif;
+ }
+.nav a{
+  font-family:'Roboto',sans-serif;
+  font-size: 18px;
+  text-align: right;
+  font-weight: 700;
+}
+.navbar-toggle{
+  border-color:#ffffff;
+}
+
+/*Navbar Ends*/
+
+
+#introHead 
+{ padding-top:100px;
+  padding-bottom:50px;
+	 min-height: 100vh;
+    text-align: center;
+    background: url('https://images.unsplash.com/photo-1488751045188-3c55bbf9a3fa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=333aaa3eb5c478754d260ca0e2c5f094&&auto=format&fit=crop&crop=entropy&w=900&h=900') no-repeat center center fixed, #9d9d9d;
+    background-size: cover;
+	background-blend-mode: normal;
+}
+#introMessage {
+   // margin-top: 150px;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	color: rgba(84, 72, 57, 1);
+    //background-color: rgba(51, 51, 51, .8);
+	background-color:rgba(231, 231, 231, .9);
+	
+}
+#introMessage h1 {
+font-family:'Playfair Display SC',serif;
+}
+#introMessage p {
+	font-family:"Roboto",sans-serif;
+	font-size:2rem;
+}
+hr.intro-divider 
+{
+  border: 1px outset rgba(255, 255, 255, 0.2);
+  width: 100%;
+}
+
+#aboutSection{
+    height: auto;
+	padding: 10px 0 25px 0;
+	background-color:whitesmoke;
+   /* background: url('https://images.unsplash.com/photo-1521575564463-67b5d2709515?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6c2b96366b047a722cbed28c319dd1a4&auto=format&fit=crop&w=500&q=60') no-repeat center center fixed, #ccc';*/
+   // background: url('https://images.unsplash.com/photo-1491975474562-1f4e30bc9468?ixlib=rb-0.3.5&s=da99fcf76fd6f00ee8524962050f1353&auto=format&fit=crop&w=500&q=60') no-repeat center center fixed, #ccc;
+   // background-size: cover;
+}
+#aboutSection h2, .portfolio .heading h2 {
+text-align:center;
+  font-family:'Droid Serif',Serif; 
+  color:#777;
+  
+}
+#aboutSection p{
+    font-size: 1.2em;
+    font-weight: 400;
+	color:#777;
+   // color: #7d7268;
+}
+
+.portfolio {
+  color: #777;
+  background-color: white;
+  //background: url('https://images.unsplash.com/photo-1521575564463-67b5d2709515?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=6c2b96366b047a722cbed28c319dd1a4&auto=format&fit=crop&w=500&q=60') no-repeat center center fixed;
+  //background-size: cover;
+}
+
+.portfolio .portfolio-item {
+ height:300px;
+ margin: 0 0 15px 0;
+ // border: 1px outset rgba(255, 255, 255, 0.6);
+}
+
+
+.portfolio .portfolio-image{
+  max-width:300px
+  width:100%;
+  height:300px;
+  margin:auto;
+}
+.portfolio .portfolio-image:hover {
+  transition: 0.5s;
+  box-shadow: 5px 10px 5px rgba(0,0,0,0.9);
+}
+
+
+
+ .portfolio-caption {
+    position: relative;
+    bottom:100px;
+    height:100px;
+    max-width: 400px;
+    margin: 0 auto;
+    background-color: rgba(0,0,0, 0.3);
+    text-align: center;
+    padding: 25px;
+	color: #fff;
+}
+ .portfolio-caption h4, .portfolio-caption p {
+  margin: 0;
+}
+  .portfolio-caption p {
+  font-size: 1em;
+}
+.vertical-align {
+   display:flex;
+   align-items: center;
+   justify-content: stretch;
+   flex-wrap: wrap; 
+}
+@media (min-width:767px) {
+   .portfolio-item {
+     margin: 0 0 30px;
+  }
+}
+
+.section-heading-spacer {
+    float: left;
+    width: 200px;
+    border-top: 3px solid #e7e7e7;
+}
+
+footer {
+    padding: 50px 0;
+    background-color:rgba(231, 231, 231, .9);
+}
+
+
+
+
+
+
+
+.input {
+  width: 100%;
+  margin: 0;
+  padding: 0 6px;
+  border: none;
+  outline: none;
+  background: transparent;
+  font: 16px/1 'Lato', san-serif;
+}
+
+.text-area {
+  min-height: 38px;
+  height: 38px;
+  margin: 2px 0 3px;
+  overflow-y: hidden;
+  resize: none;
+  -webkit-transition: height .1s;
+  -moz-transition: height .1s;
+  transition: height .1s;
+}
+ .contact
+{ 
+    text-align: center;
+   // background: url('https://images.unsplash.com/photo-1526541260187-fe49a4f44fc5?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=753882758d333a4e8c8ba87b053e039e&auto=format&fit=crop&w=500&q=60') no-repeat center center fixed;
+  //  background-size: cover;
+    min-height: 488px;
+    font-size:25px;
+}
+.contact p {
+ font-family:'Roboto',sans-serif;
+ color:#2a2d33;
+}
+
+
+
+</style>
+
+<body>
+<!--Navigation Bar-->
+   <nav class="navbar navbar-default navbar-fixed-top" id="navBar">
+     <div class="container-fluid">
+       <div class="navbar-header">
+         <a class="navbar-brand" href="#">About me</a>
+         <button class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>
+           <span class="icon-bar"></span>  
+         </button>                      
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right" id="navElements">
+        <li><a href="#home">HOME</a></li>
+        <li><a href="#about">ABOUT ME</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+         </div>
+  </div>
+</nav>
+<!--Navigation bar End-->
+
+
+ <a name="home"></a>
+    <div id="introHead">
+        <div class="container">
+            <div class="row">
+                <div class=" col-sm-8 col-md-6">
+                    <div id="introMessage">
+                        <h1 id="devName">Iwona Baczar</h1>
+                        <p id="devDesc">Full-Stack Developer </p>
+                        <hr class="intro-divider">
+						<p><small>Iwona Baczar is software developer specializing in full-stack development. Her set of skills includes HTML5, CSS, Ruby, JavaScript, jQuery, SQL, ASP.NET, C#.<small></small></p>
+                        <ul class="list-inline">
+                           
+                            <li>
+                                <a href="" target="_blank" class="btn btn-default btn-lg "><i class="fa fa-github"></i> <span class="network-name">Github</span></a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin"></i> <span class="network-name">Linkedin</span></a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-free-code-camp"></i> <span class="network-name">freeCodeCamp</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+<a  name="about"></a>
+  <div id="aboutSection">
+    <div class="container">
+      <h2 class="summaryHead">About Me</h2>
+      <div class="row">
+        <div class="col-sm-6">
+          <p class="summaryContent">
+		     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam enim libero, gravida ut elementum vitae, dictum condimentum nulla. Phasellus pellentesque lectus et ultrices tincidunt. Nam laoreet et dolor quis consequat. Donec velit enim, fermentum vel blandit et, porta eget leo. Etiam efficitur elit ac finibus vulputate. Morbi pharetra sodales nulla at gravida. Donec ut nisl vel diam ultrices rutrum. Quisque eget rhoncus arcu. Vestibulum commodo magna sit amet arcu sodales iaculis.
+          </p>
+        </div>
+        <div class="col-sm-6">
+          <p class="summaryContent">
+             Morbi dictum venenatis nunc, non pretium nulla fermentum vel. Sed quis elit cursus, interdum ipsum vitae, finibus enim. Aenean at lectus turpis. Vivamus gravida sem id ipsum aliquet, a semper enim rutrum. Sed semper dictum fringilla. Aliquam sollicitudin quam commodo nunc varius imperdiet. Suspendisse venenatis sit amet ligula vitae lobortis. <br>
+          </p>
+        </div>
+	  </div>
+    </div>
+  </div>
+<a name="portfolio"></a>
+    <section class="portfolio" >
+	  <div class="container">
+		<div class=" heading "> 
+		  <h2 >My Work</h2>
+		  <hr/>
+           <p >Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
+		</div>
+		<div class="row">
+          <div class="col-lg-12 text-center">
+        </div>
+          </div>
+            <div class="row">
+             <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="https://codepen.io/ineczka/full/oYxvQY/" target="_blank" >
+                      <img src="https://dm2302files.storage.live.com/y4pX94Zt-83jfQIoRrggtowAB4-QmSgqRYMf5J0k6hRaDOcfRXNds68XeQt-8N1klTh5-E_RGkzo_p1mT0gLAWb7LsCaYj2yxrMUbFrG5Q08SUqnTQS96EG34gxAYHyR9u1AEuCCQ46gPJhSajFhbyH1Bp-q-UwIvc_4u8fAxhBzlX5EpX_vI9r6hC-qwmnvjHk/Einstein.JPG?psid=1&width=885&height=652" class="img-responsive portfolio-image" alt="Einstein Tribute Page"> 
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Lorem Ipsum</h4>
+                        <p  >Neque porro quisquam est</p>
+                    </div>
+                </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="https://codepen.io/ineczka/full/rWdBxm/"  target="_blank" >
+                        <img src="https://dm2302files.storage.live.com/y4p30mUyglR4bW9rgOKpnQTVV4YoAVXnj3kHoL5iUeoamU6R6SBdYsRrMNWPvi1t7MkCBLTj_iEFrnUxxGX11r7fdekCfX3ay4KR9hYF6R3xBBYTjjOXidloKgtZYn1Xyvi_tXoe0EHdnU9Ffm4dSW0lrMpVRW2ItTOSppkj618cror2NCearsMfmsSQPj0ysRl/Capture.JPG?psid=1&width=304&height=233" class="img-responsive portfolio-image" alt="Random Quote">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Lorem Ipsum</h4>
+                        <p >Neque porro quisquam est</p>
+                    </div>
+                </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="https://codepen.io/ineczka/full/rwpvVr/" target="_blank" >
+                        <img src="https://dm2302files.storage.live.com/y4puH83OI5eavgjhamuqKcNmFJiM51kR2xfHB8v04AqKdTBYgbuJLqdDH8ZXOT9lzZZk73k1Ljrf6zDXObQpleHN_PK6o9IT2jMkaFUVriIrHbESsqnp6iWB7aw_REDqH08XwifbmE7HWc77SVjw3BCx4Q2kX9DfYQyiDLCHp3sHyDMCBOzMq_4oALmDJQ1axLB/Calculator.JPG?psid=1&width=888&height=651" class="img-responsive portfolio-image" alt="calculator">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Lorem Ipsum</h4>
+                        <p >Neque porro quisquam est</p>
+                    </div>
+                </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="https://codepen.io/ineczka/full/JEZwPR/" target="_blank" >
+                        <img src="https://dm2302files.storage.live.com/y4pf7RV4lbKyhnUPM0Xvd64QgwDmsfVHYJJncza-Ilid1myUFI0dJSoxas28nJ32D9_V2YoYZ00pNe7KCMCwYZkJCWpew35E9b605ZUUHYTYKgt885Ct9OIreXnFSezSGGly7_i1J42xmLILvEDxHb5lD6x4_kZYFcEyRRiKxz4JfjUAJkGRvVh1--HLY5Snhmp/WikipediaJPG.JPG?psid=1&width=885&height=659" class="img-responsive portfolio-image" alt="wikipedia viewer">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Lorem Ipsum</h4>
+                        <p  >Neque porro quisquam est</p>
+                    </div>
+                </div>
+             <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="https://codepen.io/ineczka/full/bBZWME/" target="_blank"  >
+                        <img src="https://dm2302files.storage.live.com/y4pY4CyyNvFZlTq-_do55T81EUPBNy59_X7yDwiFj3x6l79sFXDnyo8IcSD4v2XMUco2OZ1FcloNwy1cXY6_uZk9SNtcW1-9KAflzuLVOoVfVlwen6aLdvf0faDaGcyVhHDEuEDAgDwxQQGAZiRPuyX1cncSyGyyMIGVjvzon-a2ouV4gl4d7eeYKIRScykyqjn/WeatherAppJPG.JPG?psid=1&width=758&height=544" class="img-responsive portfolio-image" alt=" weather_app">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Lorem Ipsum</h4>
+                        <p >Neque porro quisquam est</p>
+                    </div>
+                </div>
+            <div class="col-md-4 col-sm-6 portfolio-item">
+                    <a href="https://codepen.io/ineczka/full/vWaxJQ/" target="_blank"  >
+                        <img src="https://dm2302files.storage.live.com/y4p2dPzmRNPZFDlp4U3czfFmeSyVGvTiGJG7WNJIp3BCmVVCyA6IQCkXo4_dXWqXHLNaN1D-neKKvpQgtA5Y15PS7DtV5u8Dk4A7OCTNIzDsZDomXQPZXm8ICK6PQeQty7lY9yer70aYTWXuf8ZmukBjuPKJzVUkfD5u6AEx28oOIcSZA_cR7LWNreZ5fUl7mPq/tictactoe.JPG?psid=1&width=887&height=656" class="img-responsive portfolio-image" alt="tictactoe">
+                    </a>
+                    <div class="portfolio-caption">
+                        <h4>Lorem Ipsum</h4>
+                        <p>Neque porro quisquam est</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	
+  <a name="contact"></a>
+    <section class="contact">
+              <p class="well"><i class="fa fa fa-envelope"></i>Contact: </p>
+       <div class="container">
+          <div class="row vertical-align">
+            <div class="col-xs-12 col-sm-6">    
+			<p class="text-center "> <span><i class="fa fa-at "></i></span> Email:  ibaczar@hotmail.com</p>
+              <p> </p>
+              
+            </div>
+            <div class="col-xs-12 col-sm-6">  
+              <form action="" method="">
+               <div class="form-group">
+			     <label></label>
+				 <input class="name-box form-control" type="text" placeholder="Name:" size="50%"/>	
+			   </div>
+	           <div class="form-group"> 
+			     <label></label>
+				 <input class = "email-box form-control" type="email" placeholder="Email:" size="50%"/>
+			   </div>
+               <div class="form-group">
+                 <label></label>
+				 <textarea rows="4" cols="50" class ="comment-box form-control" type="text" placeholder="Message:" size="50%"/></textarea>
+	           </div>
+               <button class="btn btn-default submit"><span ></span>  Submit </button> </br>
+            
+              </form>
+            </div>       
+           </div>
+		    <div class="row vertical-align">
+            <div class="col-xs-12 col-lg-6">    
+              
+            </div>
+            <div class="col-xs-12 col-lg-6">  
+            </div>       
+           </div>
+          </div>
+		 </div>
+         </section>
+       
+        <footer>
+        <div class="container">
+            <div class="row">
+              <div class="col-lg-12">
+              </div>
+            </div>
+        </div>
+    </footer>
+ 
+
+ 
+  <script>
+	$(document).ready(function(){
+//	$(".navbar").affix({offset: {top: $("#introHead").outerHeight(true)} });
+//	 $('.navbar').on('affixed.bs.affix', function(){
+//      $(this).removeClass('navbar-fixed-bottom').addClass("navbar-fixed-top") ;
+//   });
+  
+  $(".input").focus(function() {
+    $(this).parent(".field-container").addClass("is-focused");
+  });
+  
+  $(".input").blur(function() {
+    $(this).parent(".field-container").removeClass("is-focused");
+  });
+  
+ $('.field-container').on( 'keyup', '.text-area', function () {
+    $(this).height(0);
+    $(this).height(this.scrollHeight);
+  });
+
+});
+	
+	</script>
+
+</body>
+</html>
+  
+  
+
+</body>
+
+</html>
